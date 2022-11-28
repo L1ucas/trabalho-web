@@ -1,0 +1,74 @@
+<!doctype html>
+<html class="no-js" onload="getLatest()">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>JJJJ</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="style.css" rel="stylesheet"/>
+        <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+        <!-- Place favicon.ico in the root directory -->
+
+    </head>
+    <style type="text/css" media="screen">
+   </style>
+
+    <body>
+        <!--[if lt IE 8]>
+            <p class="browserupgrade">
+            You are using an <strong>outdated</strong> browser. Please
+            <a href="http://browsehappy.com/">upgrade your browser</a> to improve
+            your experience.
+            </p>
+        <![endif]-->
+        <main onload="retornarValores()">
+            <h1>Conversor de moedas</h1>
+            <section>
+
+                <div class="div_entrada">
+                    <!--            <label for="entrada">Coloque o valor aqui</label>-->
+                    <input type="text" name="entrada" id="entrada"  >
+                    <div class="imagens">
+                        <label class="moeda_dolar" >
+                            <input name="e_1" type="radio" value="1" checked/>
+                            <img src="attach-money-rounded.svg" alt="" class="icone_imagem"/>
+                        </label>
+                        <label class="moeda_real icone_imagem">
+                            <input name="e_1" type="radio" value="2"/>
+                            <img src="brazilian-real-sign.svg" alt="" class="icone_imagem" />
+                        </label>
+                        <label class="moeda_euro icone_imagem" >
+                            <input name="e_1" type="radio" value="3" />
+                            <img src="euro-rounded.svg" alt="" class="icone_imagem" />
+                        </label>
+                    </div>
+                </div>
+
+                <div>
+                    <img src="arrow-right-alt-rounded.svg" alt="" id="arrow"/>
+                </div>
+
+                <div class="div_saida">
+                    <input type="text" name="saida" id="saida" oninput="">
+                    <div class="imagens">
+                        <label class="moeda_dolar" >
+                            <input name="e_2" type="radio" value="1"/>
+                            <img src="attach-money-rounded.svg" alt="" class="icone_imagem" />
+                        </label>
+                        <label class="moeda_real">
+                            <input name="e_2" type="radio" value="2" checked />
+                            <img src="brazilian-real-sign.svg" alt="" class="icone_imagem"/>
+                        </label>
+                        <label class="moeda_euro">
+                            <input name="e_2" type="radio" value="3" />
+                            <img src="euro-rounded.svg" alt="" class="icone_imagem" />
+                        </label>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <script src="jquery-3.6.1.min.js"></script>
+        <script src="script.js"></script>
+    </body>
+</html>
