@@ -22,24 +22,24 @@
             your experience.
             </p>
         <![endif]-->
-        <main onload="retornarValores()">
+        <main>
             <h1>Conversor de moedas</h1>
             <section>
 
                 <div class="div_entrada">
                     <!--            <label for="entrada">Coloque o valor aqui</label>-->
-                    <input type="text" name="entrada" id="entrada"  >
+                    <input type="text" name="entrada" id="entrada" oninput="converterValores()">
                     <div class="imagens">
                         <label class="moeda_dolar" >
-                            <input name="e_1" type="radio" value="1" checked/>
+                            <input name="e_1" type="radio" value="0" onclick="imprimirValor('e_1')" checked/>
                             <img src="attach-money-rounded.svg" alt="" class="icone_imagem"/>
                         </label>
                         <label class="moeda_real icone_imagem">
-                            <input name="e_1" type="radio" value="2"/>
+                            <input name="e_1" type="radio" value="1" onclick="imprimirValor('e_1')"/>
                             <img src="brazilian-real-sign.svg" alt="" class="icone_imagem" />
-                        </label>
+                        </label> 
                         <label class="moeda_euro icone_imagem" >
-                            <input name="e_1" type="radio" value="3" />
+                            <input name="e_1" type="radio" value="2" onclick="imprimirValor('e_1')"/>
                             <img src="euro-rounded.svg" alt="" class="icone_imagem" />
                         </label>
                     </div>
@@ -50,18 +50,18 @@
                 </div>
 
                 <div class="div_saida">
-                    <input type="text" name="saida" id="saida" oninput="">
+                    <input type="text" name="saida" id="saida" oninput="converterValores('e_2')">
                     <div class="imagens">
                         <label class="moeda_dolar" >
-                            <input name="e_2" type="radio" value="1"/>
+                            <input name="e_2" type="radio" value="0" onclick="imprimirValor('e_2')"/>
                             <img src="attach-money-rounded.svg" alt="" class="icone_imagem" />
                         </label>
                         <label class="moeda_real">
-                            <input name="e_2" type="radio" value="2" checked />
+                            <input name="e_2" type="radio" value="1" checked onclick="imprimirValor('e_2')"/>
                             <img src="brazilian-real-sign.svg" alt="" class="icone_imagem"/>
                         </label>
                         <label class="moeda_euro">
-                            <input name="e_2" type="radio" value="3" />
+                            <input name="e_2" type="radio" value="2" onclick="imprimirValor('e_2')"/>
                             <img src="euro-rounded.svg" alt="" class="icone_imagem" />
                         </label>
                     </div>

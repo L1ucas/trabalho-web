@@ -1,18 +1,44 @@
 let input_entrada = document.getElementById("entrada")
 let input_saida = document.getElementById("saida")
 
-let url = 'https://economia.awesomeapi.com.br/last/USD-BRL,EUR-BRL,BTC-BRL'
+let valor_entrada = 0
+let valor_saida = 1
 
-function retornarValores() {
-  fetch('https://economia.awesomeapi.com.br/last/USD-BRL,EUR-BRL,BTC-BRL')
-    .then(response => {
-      response.json()
-              .then(data => mostrarDados(data))
-    })
-  const mostrarDados = (result) => {
-    document.getElementById("saida").value = result[1][1]
-    console.log(result)
+// D, R, E
+
+
+
+let conversoes = [
+  [1, 5, 2], [1/5, 1, 1/2], [1/2, 2, 1]
+]
+
+function imprimirValor(e) {
+  var ele = document.getElementsByName(e)
+  let tempvalue = 0
+  input_saida.value = ''
+
+  if (e === 'e_1'){
+    for(i = 0; i < ele.length; i++) {
+      if(ele[i].checked){
+        valor_entrada = ele[i].value
+      }
+    } 
+  } else if (e === 'e_2'){
+    for(i = 0; i < ele.length; i++) {
+      if(ele[i].checked){          
+          valor_saida = ele[i].value
+      }
+    } 
   }
+
+  console.log(`(${valor_entrada}, ${valor_saida})`)
+  converterValores()
+}
+
+function converterValores(){
+  
+  input_saida.value = input_entrada.value * conversoes[valor_entrada][valor_saida]
+  console.log(conversoes[valor_entrada][valor_saida])
 }
 
 // $("#").blur(function(e) {
