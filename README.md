@@ -25,3 +25,10 @@ botão correspondente a ela nos três botões embaixo da segunda caixa de texto.
 Sendo escolhidas as moedas, você deve escrever o valor (usando apenas números e
 apenas uma vírgula ou um ponto) na primeira caixa de texto. O programa irá fazer
 os cálculos e o valor convertido aparecerá na segunda caixa de texto.
+
+## Membros da equipe
+
+- Vitor Hugo
+- Airton Júnior
+- Antonio Edson 
+- Pedro Lucas
