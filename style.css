@@ -1,24 +1,52 @@
+* {
+    box-sizing: border-box;
+/* border: solid red 1px;*/
+}
+
 body {
-    background-color: lightgray;
+    background-color: #404258;
     height: 100vh;
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
+
 }
 
-input {
+h1 {
+    color: white;
+}
+
+#arrow {
+    transform: scale(70%);
+}
+
+.main-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 90%;
+    max-width: 70%;
+    background-color: #6B728E;
+    border: solid #6B728E 1px;
+    border-radius: 10px;
+}
+
+.input_user {
     height: 80px;
     width: 240px;
     border-radius: 6px;
-    border: solid black 3px;
+    border: solid #EDEDED 2px;
+    color: white;
+    background-color: #6B728E;
     font-size: 30px;
     text-align: center;
+    font-family: monospace;
 }
 
 main {
+    margin: 10px;
     text-align: center;
-    max-width: 40%;
 }
 
 section {
@@ -37,38 +65,20 @@ section {
     display: flex;
     flex-direction: row;
     margin-top: 10px;
+    
     justify-content: space-between;
 }
 
-.icone_imagem  {
-    background-color: #ffff6a;
-    border-radius: 2em;
-    width: 16px;
-    height: 16px;
-    border: solid black 2px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.icone_imagem {
+    border: solid transparent 0px;
+    border-radius: 60px;
+    background-color: #ededed;
 }
 
 .icone_imagem:hover {
-    background-color: blue;
+    background-color: #FB2576;
 }
 
-.moeda_dolar {
-    transform: scale(400%);
-}
-
-.moeda_euro {
-    transform: scale(380%) translate(-5%);
-}
-
-.moeda_real {
-    transform: scale(280%);
-    width: 16px;
-    height: 16px;
-
-}
 
 .div_entrada {
     display: flex;
@@ -88,6 +98,18 @@ section {
 }
 
 /* CHECKED STYLES */
-[type=radio]:checked + img {
-    outline: 2px solid #f00;
+[type=radio]:checked + .icone_imagem {
+    outline: none;
+    background-color: #FB2576;
+}
+
+.texto_fundo {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.texto_fundo h2{
+    max-width: 200px;
+    text-align: right;
+    color: white;
 }
