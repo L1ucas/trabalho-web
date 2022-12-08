@@ -9,12 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="style.css" rel="stylesheet" />
     <link rel="apple-touch-icon" href="/apple-touch-icon.png">
-    <!-- Place favicon.ico in the root directory -->
-
 </head>
-<style type="text/css" media="screen">
-</style>
-
 <body>
     <!--[if lt IE 8]>
             <p class="browserupgrade">
@@ -30,42 +25,41 @@
             <section>
 
                 <div class="div_entrada">
-                    <!--            <label for="entrada">Coloque o valor aqui</label>-->
                     <input type="text" name="entrada" id="entrada" oninput="converterValores()" class="input_user">
                     <div class="imagens">
                         <label class="moeda_dolar">
                             <input name="e_1" type="radio" value="0" onclick="imprimirValor('e_1')" checked />
-                            <img src="dolar.svg" class="icone_imagem" />
+                            <img src="./images/dolar.svg" class="icone_imagem" alt="imagem da moeda do dólar"/>
                         </label>
                         <label class="moeda_real">
                             <input name="e_1" type="radio" value="1" onclick="imprimirValor('e_1')" />
-                            <img src="real.svg" class="icone_imagem" />
+                            <img src="./images/real.svg" class="icone_imagem" alt="imagem da moeda do real"/>
                         </label>
                         <label class="moeda_euro">
                             <input name="e_1" type="radio" value="2" onclick="imprimirValor('e_1')" />
-                            <img src="euro.svg" class="icone_imagem" />
+                            <img src="./images/euro.svg" class="icone_imagem" alt="imagem da moeda do euro" />
                         </label>
                     </div>
                 </div>
 
                 <div>
-                    <img src="seta.svg" id="arrow" />
+                    <img src="./images/seta.svg" id="arrow" />
                 </div>
 
                 <div class="div_saida">
-                    <input type="text" name="saida" id="saida" oninput="converterValores('e_2')" class="input_user">
+                    <input type="text" name="saida" id="saida" oninput="converterValores('e_2')" class="input_user" readonly>
                     <div class="imagens">
                         <label class="moeda_dolar">
                             <input name="e_2" type="radio" value="0" onclick="imprimirValor('e_2')" />
-                            <img src="dolar.svg" alt="" class="icone_imagem" />
+                            <img src="./images/dolar.svg" class="icone_imagem" alt="imagem da moeda do dólar"/>
                         </label>
                         <label class="moeda_real">
                             <input name="e_2" type="radio" value="1" checked onclick="imprimirValor('e_2')" />
-                            <img src="real.svg" alt="" class="icone_imagem" />
+                            <img src="./images/real.svg" alt="imagem da moeda do real" class="icone_imagem" />
                         </label>
                         <label class="moeda_euro">
                             <input name="e_2" type="radio" value="2" onclick="imprimirValor('e_2')" />
-                            <img src="euro.svg" alt="" class="icone_imagem" />
+                            <img src="./images/euro.svg" alt="imagem da moeda do euro" class="icone_imagem" />
                         </label>
                     </div>
                 </div>

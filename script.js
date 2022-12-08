@@ -5,8 +5,9 @@ let input_saida = document.getElementById("saida")
 let valor_entrada = 0
 let valor_saida = 1
 
-// const url = 'https://economia.awesomeapi.com.br/last/USD-BRL,USD-EUR,EUR-BRL,EUR-USD,BRL-USD,BRL-EUR'
-const url = './api.json'
+const url = 'https://economia.awesomeapi.com.br/last/USD-BRL,USD-EUR,EUR-BRL,EUR-USD,BRL-USD,BRL-EUR'
+// use in case site doesn't work
+// const url = './api.json'
 
 // D, R, E
 
@@ -70,19 +71,3 @@ function converterValores(){
   }
     console.log(conversoes[valor_entrada][valor_saida])
 }
-
-// $("#").blur(function(e) {
-//     let cep = this.value
-//     fetch(`https://viacep.com.br/ws/${cep}/json/`)
-//         .then(response => {
-//             response.json()
-//                 .then(data => mostrarDados(data))
-//     })
-//     const mostrarDados = (result) => {
-//         for(const campo in result){
-//             if (document.querySelector("#"+campo)) {
-//                 document.querySelector("#"+campo).value = result[campo]
-//             }
-//         }
-//     }
-// })
