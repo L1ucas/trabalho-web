@@ -32,3 +32,4 @@ os cálculos e o valor convertido aparecerá na segunda caixa de texto.
 - Airton Júnior
 - Antonio Edson 
 - Pedro Lucas
+- Elias
